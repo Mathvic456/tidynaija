@@ -24,9 +24,9 @@ function App() {
         <Hero />
       </Container>
       
-      <Container>
+      {/* <Container> */}
         <Illustration />
-      </Container>
+      {/* </Container> */}
       
       <TrustBar />
       

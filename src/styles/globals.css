@@ -196,18 +196,13 @@ nav.links a:hover {
 
 /* Illustration */
 .illustration {
-  background: #fbfbf8;
-  border-radius: 22px;
-  overflow: hidden;
-  max-width: 1180px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.illustration svg {
+.illustration img {
   width: 100%;
-  height: auto;
-  display: block;
 }
+
 
 /* Trust bar */
 .trustbar {
@@ -307,7 +302,7 @@ p.section-sub.light {
   width: 42px;
   height: 42px;
   border-radius: 10px;
-  background: #EAF5EE;
+  background: #007B33;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,9 +373,14 @@ p.section-sub.light {
 }
 
 .stat-card {
+  background-color: #005024;
   border: 1px solid rgba(255,255,255,.18);
   border-radius: 14px;
   padding: 22px;
+  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
+
+  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-200);
+
 }
 
 .stat-card svg {
@@ -400,19 +400,50 @@ p.section-sub.light {
   color: #fff;
 }
 
+.market-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
 .pill-row {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  gap: 12px;
+  width: fit-content;
+  margin: 30px auto;
 }
 
 .pill {
-  border: 1px solid rgba(255,255,255,.35);
+  background-color: #C8860A4D;
+  width: 205;
+  height: 44;
+  gap: 8px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+.investor-brief{
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
   border-radius: 100px;
-  padding: 8px 18px;
-  font-size: 12.5px;
-  font-weight: 600;
+  border-width: 1px;
+  background-color: transparent;
+  border: 1px solid #D4900A;
+  color: #D4900A;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .market-left .btn {
@@ -451,15 +482,15 @@ p.section-sub.light {
 }
 
 .offer-card .icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 9px;
-  background: #EAF5EE;
-  color: var(--green);
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #007B33;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+  color: var(--green);
 }
 
 .offer-card h3 {
@@ -582,15 +613,15 @@ p.section-sub.light {
 }
 
 .whyus-card .icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 9px;
-  background: #EAF5EE;
-  color: var(--green);
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #007B33;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
+  color: var(--green);
 }
 
 .whyus-card .icon svg {
@@ -608,6 +639,15 @@ p.section-sub.light {
   font-size: 14px;
   color: var(--muted);
   line-height: 1.6;
+}
+
+.coming{
+  width: 100%;
+}
+
+.coming img{
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Roadmap */

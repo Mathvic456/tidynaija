@@ -18,7 +18,7 @@ const MarketOpportunity = ({ id }) => {
           <div className="market-left">
             <p className="eyebrow light market-eyebrow-wrap">— Market Opportunity</p>
             <h2 className="section-title light serif">
-              Nigeria has over 220 million people. <span className="accent">Almost none have</span> reliable waste services.
+              Nigeria has over 220 million people. <span className="accent">Almost none have reliable waste services.</span> 
             </h2>
             <p className="section-sub light">
               Nigeria's urban waste sector is historically informal, underfunded, and unconnected. 
@@ -37,16 +37,18 @@ const MarketOpportunity = ({ id }) => {
               ))}
             </div>
             
-            <div className="pill-row">
-              <span className="pill">SDG 11 · Sustainable Cities</span>
-              <span className="pill">SDG 13 · Climate Action</span>
-              <span className="pill">SDG 8 · Decent Work</span>
-            </div>
-            
-            <Button variant="outline-white" href="#">
-              Download Investor Brief
-            </Button>
           </div>
+        </div>
+        <div className='market-bottom'>
+          <div className="pill-row">
+            <span className="pill">SDG 11 · Sustainable Cities</span>
+            <span className="pill">SDG 13 · Climate Action</span>
+            <span className="pill">SDG 8 · Decent Work</span>
+          </div>
+          
+            <button className="investor-brief">
+              Download Investor Brief
+            </button>
         </div>
       </Container>
     </section>
