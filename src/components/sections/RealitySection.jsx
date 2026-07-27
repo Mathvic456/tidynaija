@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from '../shared/Container';
 import Card from '../ui/Card';
 import { Clock, Document, Eye } from '../ui/Icon';
@@ -12,8 +11,8 @@ const RealitySection = ({ id }) => {
     },
     {
       icon: <Document />,
-      title: 'Missed pickups go unrecorded',
-      description: 'When a collector doesn\'t show, there\'s no formal mechanism, no refund process, and no record that it happened. The waste stays. The problem compounds.'
+      title: 'Missed pickups go unrecorded.',
+      description: 'When a collector doesn\'t show, there\'s no report mechanism, no refund process, and no record that it happened. The waste stays. The problem compounds.'
     },
     {
       icon: <Eye />,
@@ -26,7 +25,7 @@ const RealitySection = ({ id }) => {
     <section id={id}>
       <Container>
         <div className="reality-head">
-          <p className="eyebrow center">— The Reality</p>
+          <p className="eyebrow">— The Reality</p>
           <h2 className="section-title serif">
             Waste collection in Nigeria is broken.<br />
             <span className="accent">Not for lack of trying.</span>

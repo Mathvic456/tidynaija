@@ -5,7 +5,6 @@ import Hero from './components/sections/Hero';
 import Illustration from './components/sections/Illustration';
 import TrustBar from './components/ui/TrustBar';
 import RealitySection from './components/sections/RealitySection';
-// import MarketOpportunity from './components/sections/MarketOpportunity';
 import MarketOpportunity from './components/sections/MarketOppurtunity';
 import OfferSection from './components/sections/OfferSection';
 import ProcessSection from './components/sections/ProcessSection';
