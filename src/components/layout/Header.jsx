@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <img src="/top.png" alt="TidyNaija Logo" style={{ width: '35px', height: '35px', objectFit: 'contain' }} />
+        <img src="/top.png" alt="TidyNaija Logo" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
         TidyNaija
       </div>
 

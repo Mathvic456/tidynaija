@@ -21,7 +21,7 @@ const MarketOpportunity = ({ id }) => {
             </h2>
             <p className="section-sub light">
               Nigeria's urban waste sector is historically informal, underfunded, and unconnected. 
-              That's not a failure — it's a wide-open entry point for a technology-first operator 
+              That's not a failure, it's a wide-open entry point for a technology-first operator 
               with government alignment and a proven on-the-ground model.
             </p>
           </div>

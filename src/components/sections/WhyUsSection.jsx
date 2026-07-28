@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../shared/Container';
 import Card from '../ui/Card';
-import { Shield, Check, Grid, Naira } from '../ui/Icon';
+import { Shield, Grid, Naira, Star } from '../ui/Icon';
 
 const WhyUsSection = () => {
   const reasons = [
@@ -11,14 +11,14 @@ const WhyUsSection = () => {
       description: 'Every pickup is logged, timestamped, and photographed. No more "I came but nobody was home" with no proof.'
     },
     {
-      icon: <Check />,
+      icon: <Star />,
       title: 'A Verified Collector Network',
       description: 'Every collector is trained, rated, and monitored. The informal sector becomes a formal, dignified supply chain.'
     },
     {
       icon: <Grid />,
       title: 'Officially Sanctioned Operations',
-      description: 'Tidy Naija operates in partnership with Akwa Ibom State environmental agencies — not around them. Our data is trusted data.'
+      description: 'Tidy Naija operates in partnership with Akwa Ibom State environmental agencies Fnot around them. Our data is trusted data.'
     },
     {
       icon: <Naira />,

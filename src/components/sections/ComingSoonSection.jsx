@@ -44,7 +44,7 @@ const ComingSoonSection = () => {
                 <Button variant="solid">Notify Me</Button>
               </div>
             </div>
-            <p className="fineprint">No spam. ONe message when we launch</p>
+            <p className="fineprint">No spam. One message when we launch</p>
           </div>
           <div className="coming">
             <img src="/coming.png" alt="TidyNaija Mobile App Mockup" />

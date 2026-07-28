@@ -36,7 +36,7 @@ function App() {
       </Container>
 
       <Container>
-        <Hero />
+        <Hero onServiceClick={openServiceModal} />
       </Container>
 
       {/* <Container> */}

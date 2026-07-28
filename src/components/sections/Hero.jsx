@@ -2,7 +2,7 @@ import React from 'react';
 import Badge from '../ui/Badge';
 import Button from '../ui/Button';
 
-const Hero = () => {
+const Hero = ({ onServiceClick }) => {
   return (
     <div className="hero">
       <Badge style={{ backgroundColor: '#4CAF50', color: 'black' }}>
@@ -23,7 +23,16 @@ const Hero = () => {
         <Button variant="outline" href="#investors">
           Investor Deck
         </Button>
-        <Button variant="solid" href="#book">
+        <Button
+          variant="solid"
+          href="#book"
+          onClick={(e) => {
+            if (onServiceClick) {
+              e.preventDefault();
+              onServiceClick('Book Online');
+            }
+          }}
+        >
           Book a Pickup
         </Button>
       </div>
