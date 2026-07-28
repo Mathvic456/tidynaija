@@ -27,7 +27,7 @@ body {
 }
 
 .serif {
-  font-family: 'Fraunces', serif;
+  font-family: 'Instrument Serif', serif;
 }
 
 .wrap {
@@ -253,7 +253,7 @@ section {
 }
 
 h2.section-title {
-  font-family: 'Fraunces', serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 400;
   font-size: 38px;
   line-height: 1.22;
@@ -334,7 +334,7 @@ p.section-sub.light {
 }
 
 .quote-block p {
-  font-family: 'Fraunces', serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 400;
   /* font-style: italic; */
   font-size: 27px;
@@ -494,7 +494,7 @@ p.section-sub.light {
 }
 
 .offer-card h3 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 500;
   font-size: 21px;
   margin-bottom: 16px;
@@ -726,7 +726,7 @@ p.section-sub.light {
 }
 
 .phase-card h3 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 500;
   font-size: 19px;
   margin-bottom: 16px;
@@ -845,7 +845,7 @@ p.section-sub.light {
 }
 
 .cta-section h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 400;
   font-size: 44px;
   line-height: 1.2;
