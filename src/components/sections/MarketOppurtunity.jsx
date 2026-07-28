@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../shared/Container';
-import { Chart, Calendar, Cloud, Users, House, Recycle, Briefcase, Expand } from '../ui/Icon';
+import { House, Recycle, Briefcase, Expand } from '../ui/Icon';
 
 const MarketOpportunity = ({ id }) => {
   const stats = [

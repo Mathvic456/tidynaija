@@ -1,5 +1,5 @@
 import React from 'react';
-import { Twitter, Facebook, Instagram, TikTok } from '../ui/Icon';
+import { Twitter, Instagram, TikTok } from '../ui/Icon';
 
 const Footer = ({ onMissionClick, onServiceClick }) => {
   return (
@@ -18,7 +18,6 @@ const Footer = ({ onMissionClick, onServiceClick }) => {
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="https://x.com/tidynaija?s=11&t=YJcmoHULNu48D5JDBr4jfA"><Twitter /></a>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            {/* <a href="#"><Facebook /></a> */}
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="http://www.tiktok.com/@tidy.naija"><TikTok /></a>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
