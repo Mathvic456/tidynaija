@@ -19,38 +19,38 @@ function App() {
       <Container>
         <Header />
       </Container>
-      
+
       <Container>
         <Hero />
       </Container>
-      
+
       {/* <Container> */}
-        <Illustration />
+      <Illustration />
       {/* </Container> */}
-      
+
       <TrustBar />
-      
+
       <RealitySection id="about" />
-      
+
       <MarketOpportunity id="investors" />
-      
+
       <OfferSection id="services" />
-      
+
       <ProcessSection id="process" />
-      
+
       <WhyUsSection />
-      
+
       <RoadmapSection />
-      
+
       <ComingSoonSection />
-      
+
       <div className="dark-section">
         <Container>
           <div className="cta-section">
             <h2 className="serif">
-              <span className="white">Ready</span> to be<br />
+              <span className="grey">Ready</span> <span className='white'> to be </span><br />
               <span className="white">part of a</span> <span className="accent">cleaner</span><br />
-              <span className="white">Nigeria?</span>
+              <span className="accent">Nigeria?</span>
             </h2>
           </div>
           <Footer />

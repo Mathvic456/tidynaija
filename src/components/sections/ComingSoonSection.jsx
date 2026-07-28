@@ -19,13 +19,13 @@ const ComingSoonSection = () => {
           <div className="cs-left">
             <p className="eyebrow">— Coming Soon</p>
             <h2 className="section-title serif">
-              The app is coming.<br />
-              <span className="accent">The service is already here.</span>
+              <span style={{ color: '#00C853' }}>The app is coming.</span><br />
+              <span style={{ color: '#000000' }}>The service is</span><span style={{ color: '#7A9B83' }}> already here.</span>
             </h2>
             <p className="section-sub">
               Our mobile app will bring real-time tracking, TidyPoints rewards, and full account management to your pocket.
             </p>
-            
+
             <ul>
               {features.map((feature, index) => (
                 <li key={index}>
@@ -33,7 +33,7 @@ const ComingSoonSection = () => {
                 </li>
               ))}
             </ul>
-            
+
             <div className="notify-box">
               <h4>Be first to know when we launch.</h4>
               <p className="sm">Get notified when we launch.</p>
@@ -44,8 +44,8 @@ const ComingSoonSection = () => {
             </div>
             <p className="fineprint">We respect your privacy. Unsubscribe anytime.</p>
           </div>
-<div className="coming" style={{ maxWidth: '1200px' }}>
-          <img src="../../coming.png" alt="" style={{ width: '100%', height: '100%', maxWidth: '1200px', display: 'block' }} />
+          <div className="coming">
+            <img src="../../coming.png" alt="TidyNaija Mobile App Mockup" />
           </div>
         </div>
       </Container>

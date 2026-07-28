@@ -1,27 +1,32 @@
 import React from 'react';
-import { Logo, Twitter, Facebook, Instagram, LinkedIn } from '../ui/Icon';
+import { Twitter, Facebook, Instagram, TikTok } from '../ui/Icon';
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer-grid">
         <div className="footer-brand">
-          <div className="logo">
-            <Logo />
+          <div className="logo footer-logo">
+            <img src="/foot.png" alt="TidyNaija" className="footer-logo-img" />
             TidyNaija
           </div>
           <p>
-            Smart waste management for Nigerian cities. Starting with Uyo, Akwa Ibom — 
-            built to transform every city in Nigeria.
+            Smart waste management for Nigerian cities. Starting with Uyo, Akwa Ibom built
+            to transform every city in Nigeria.
           </p>
           <div className="socials">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="#"><Twitter /></a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="#"><Facebook /></a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a href="#"><TikTok /></a>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="#"><Instagram /></a>
-            <a href="#"><LinkedIn /></a>
           </div>
+          <p className="footer-email"><span className="footer-email-label">EMAIL US:</span> info@tidynaija.com</p>
         </div>
-        
+
         <FooterColumn title="Services" items={[
           'Waste Pickup',
           'Cleaning Services',
@@ -29,13 +34,13 @@ const Footer = () => {
           'Become a Collector',
           'TidyPoints (Soon)'
         ]} />
-        
+
         <FooterColumn title="Company" items={[
           'About Tidy Naija',
           'Our Mission',
           'Careers'
         ]} />
-        
+
         <FooterColumn title="Support" items={[
           'Contact Us',
           'Help Centre',
@@ -44,11 +49,9 @@ const Footer = () => {
           'Terms of Service'
         ]} />
       </div>
-      
-      <p className="footer-email">EMAIL US: info@tidynaija.com</p>
-      
+
       <div className="footer-bottom">
-        <span>© 2025 Tidy Naija Technologies Ltd. Uyo, Akwa Ibom State, Nigeria.</span>
+        <span>© 2025 Tidy Naija Technologies Ltd. · Uyo, Akwa Ibom State, Nigeria</span>
       </div>
     </footer>
   );

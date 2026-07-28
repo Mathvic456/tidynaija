@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '../shared/Container';
-import Button from '../ui/Button';
 import { Chart, Calendar, Cloud, Users } from '../ui/Icon';
 
 const MarketOpportunity = ({ id }) => {
