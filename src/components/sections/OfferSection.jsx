@@ -13,7 +13,8 @@ const OfferSection = ({ id }) => {
         'Scheduled + on-demand pickups',
         'Live collector tracking',
         'Proof-of-service photo after every job',
-        '₦ NGN pricing, no hidden fees'
+        '₦ NGN pricing, no hidden fees',
+        'Book online'
       ]
     },
     {
@@ -21,7 +22,7 @@ const OfferSection = ({ id }) => {
       title: 'Professional\nCleaning Services',
       features: [
         'Home, office & compound cleaning',
-        'Equipment provided at no extra cost',
+        'Equipment provided no extras needed',
         'Pre-booked and emergency slots',
         'Rated, verified professionals',
         'Commercial packages available'

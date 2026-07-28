@@ -44,9 +44,8 @@ const ComingSoonSection = () => {
             </div>
             <p className="fineprint">We respect your privacy. Unsubscribe anytime.</p>
           </div>
-          
-          <div className="coming">
-            <img src="../../coming.png" alt="" />
+<div className="coming" style={{ maxWidth: '1200px' }}>
+          <img src="../../coming.png" alt="" style={{ width: '100%', height: '100%', maxWidth: '1200px', display: 'block' }} />
           </div>
         </div>
       </Container>
