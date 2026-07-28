@@ -64,7 +64,7 @@ const FooterColumn = ({ title, items, onMissionClick, onServiceClick }) => (
         <li key={index}>
           {title === 'Company' && item === 'Our Mission' && onMissionClick ? (
             <button type="button" className="footer-link-button" onClick={onMissionClick}>{item}</button>
-          ) : title === 'Services' && onServiceClick ? (
+          ) : title === 'Services' && (item === 'Book Online' || item === 'Become a Collector') && onServiceClick ? (
             <button type="button" className="footer-link-button" onClick={() => onServiceClick(item)}>{item}</button>
           ) : (
             item
