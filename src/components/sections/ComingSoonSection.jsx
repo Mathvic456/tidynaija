@@ -26,26 +26,28 @@ const ComingSoonSection = () => {
               Our mobile app will bring real-time tracking, TidyPoints rewards, and full account management to your pocket.
             </p>
 
-            <ul>
+            <ul style={{ color: '#000000' }}>
               {features.map((feature, index) => (
-                <li key={index}>
+                <li key={index} style={{ color: '#000000' }}>
                   <Check /> {feature}
                 </li>
               ))}
             </ul>
 
             <div className="notify-box">
-              <h4>Be first to know when we launch.</h4>
-              <p className="sm">Get notified when we launch.</p>
+              <h4 style={{ color: '#000000' }}>Be first to know when we launch.</h4>
+              <p className="sm" style={{ color: '#000000' }}>
+                Get notified when we launch.
+              </p>
               <div className="notify-form">
                 <input type="text" placeholder="Your email or phone number" />
                 <Button variant="solid">Notify Me</Button>
               </div>
             </div>
-            <p className="fineprint">We respect your privacy. Unsubscribe anytime.</p>
+            <p className="fineprint">No spam. ONe message when we launch</p>
           </div>
           <div className="coming">
-            <img src="../../coming.png" alt="TidyNaija Mobile App Mockup" />
+            <img src="/coming.png" alt="TidyNaija Mobile App Mockup" />
           </div>
         </div>
       </Container>
@@ -54,3 +56,4 @@ const ComingSoonSection = () => {
 };
 
 export default ComingSoonSection;
+

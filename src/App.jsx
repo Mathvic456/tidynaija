@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
@@ -11,9 +11,24 @@ import ProcessSection from './components/sections/ProcessSection';
 import WhyUsSection from './components/sections/WhyUsSection';
 import RoadmapSection from './components/sections/RoadmapSection';
 import ComingSoonSection from './components/sections/ComingSoonSection';
+import MissionModal from './components/sections/MissionModal';
+import ServiceModal from './components/sections/ServiceModal';
+import InvestorBriefModal from './components/sections/InvestorBriefModal';
 import Container from './components/shared/Container';
 
 function App() {
+  const [isMissionOpen, setIsMissionOpen] = useState(false);
+
+  const openMissionModal = () => setIsMissionOpen(true);
+  const closeMissionModal = () => setIsMissionOpen(false);
+  const [serviceModal, setServiceModal] = useState({ open: false, service: null });
+  const [isInvestorModalOpen, setIsInvestorModalOpen] = useState(false);
+
+  const openServiceModal = (serviceName) => setServiceModal({ open: true, service: serviceName });
+  const closeServiceModal = () => setServiceModal({ open: false, service: null });
+  const openInvestorModal = () => setIsInvestorModalOpen(true);
+  const closeInvestorModal = () => setIsInvestorModalOpen(false);
+
   return (
     <>
       <Container>
@@ -32,7 +47,7 @@ function App() {
 
       <RealitySection id="about" />
 
-      <MarketOpportunity id="investors" />
+      <MarketOpportunity id="investors" onDownloadClick={openInvestorModal} />
 
       <OfferSection id="services" />
 
@@ -44,6 +59,12 @@ function App() {
 
       <ComingSoonSection />
 
+      {isMissionOpen && <MissionModal onClose={closeMissionModal} />}
+      {serviceModal.open && (
+        <ServiceModal serviceName={serviceModal.service} onClose={closeServiceModal} />
+      )}
+      {isInvestorModalOpen && <InvestorBriefModal onClose={closeInvestorModal} />}
+
       <div className="dark-section">
         <Container>
           <div className="cta-section">
@@ -53,7 +74,7 @@ function App() {
               <span className="accent">Nigeria?</span>
             </h2>
           </div>
-          <Footer />
+          <Footer onMissionClick={openMissionModal} onServiceClick={openServiceModal} />
         </Container>
       </div>
     </>

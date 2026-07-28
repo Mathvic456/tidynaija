@@ -1,7 +1,7 @@
 import React from 'react';
 import { Twitter, Facebook, Instagram, TikTok } from '../ui/Icon';
 
-const Footer = () => {
+const Footer = ({ onMissionClick, onServiceClick }) => {
   return (
     <footer>
       <div className="footer-grid">
@@ -16,13 +16,13 @@ const Footer = () => {
           </p>
           <div className="socials">
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a href="#"><Twitter /></a>
+            <a href="https://x.com/tidynaija?s=11&t=YJcmoHULNu48D5JDBr4jfA"><Twitter /></a>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a href="#"><Facebook /></a>
+            {/* <a href="#"><Facebook /></a> */}
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a href="#"><TikTok /></a>
+            <a href="http://www.tiktok.com/@tidy.naija"><TikTok /></a>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a href="#"><Instagram /></a>
+            <a href="https://www.instagram.com/tidy.naija?igsh=ZmxhbDVxdnNoa28w&utm_source=qr"><Instagram /></a>
           </div>
           <p className="footer-email"><span className="footer-email-label">EMAIL US:</span> info@tidynaija.com</p>
         </div>
@@ -33,13 +33,13 @@ const Footer = () => {
           'Book Online',
           'Become a Collector',
           'TidyPoints (Soon)'
-        ]} />
+        ]} onServiceClick={onServiceClick} />
 
         <FooterColumn title="Company" items={[
           'About Tidy Naija',
           'Our Mission',
           'Careers'
-        ]} />
+        ]} onMissionClick={onMissionClick} />
 
         <FooterColumn title="Support" items={[
           'Contact Us',
@@ -57,12 +57,20 @@ const Footer = () => {
   );
 };
 
-const FooterColumn = ({ title, items }) => (
+const FooterColumn = ({ title, items, onMissionClick, onServiceClick }) => (
   <div className="footer-col">
     <h5>{title}</h5>
     <ul>
       {items.map((item, index) => (
-        <li key={index}>{item}</li>
+        <li key={index}>
+          {title === 'Company' && item === 'Our Mission' && onMissionClick ? (
+            <button type="button" className="footer-link-button" onClick={onMissionClick}>{item}</button>
+          ) : title === 'Services' && onServiceClick ? (
+            <button type="button" className="footer-link-button" onClick={() => onServiceClick(item)}>{item}</button>
+          ) : (
+            item
+          )}
+        </li>
       ))}
     </ul>
   </div>

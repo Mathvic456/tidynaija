@@ -5,7 +5,9 @@ import Button from '../ui/Button';
 const Hero = () => {
   return (
     <div className="hero">
-      <Badge>Now Serving Akwa Ibom State</Badge>
+      <Badge style={{ backgroundColor: '#4CAF50', color: 'black' }}>
+        Now Serving Akwa Ibom State
+      </Badge>
 
       <h1 className="serif">
         Waste Pickup That<br />

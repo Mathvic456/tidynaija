@@ -1,13 +1,13 @@
 import React from 'react';
 import Container from '../shared/Container';
-import { Chart, Calendar, Cloud, Users } from '../ui/Icon';
+import { Chart, Calendar, Cloud, Users, House, Recycle, Briefcase, Expand } from '../ui/Icon';
 
 const MarketOpportunity = ({ id }) => {
   const stats = [
-    { icon: <Chart />, text: <><b>Our goal:</b> serve 2,000+ households in Uyo by end of Year 1</> },
-    { icon: <Calendar />, text: 'Planned expansion to 3 more LGAs across Akwa Ibom by 2028' },
-    { icon: <Cloud />, text: 'Building measurable CO₂ offset infrastructure by 2027' },
-    { icon: <Users />, text: 'Creating formal employment for collectors across Akwa Ibom State' }
+    { icon: <House />, text: <><b>Our goal:</b> serve 2,000+ households in Uyo by end of Year 1</> },
+    { icon: <Expand />, text: 'Planned expansion to 3 more LGAs across Akwa Ibom by 2028' },
+    { icon: <Recycle />, text: 'Building measurable CO₂ offset infrastructure by 2027' },
+    { icon: <Briefcase />, text: 'Creating formal employment for collectors across Akwa Ibom State' }
   ];
 
   return (
@@ -45,9 +45,9 @@ const MarketOpportunity = ({ id }) => {
             <span className="pill">SDG 8 · Decent Work</span>
           </div>
           
-            <button className="investor-brief">
+            <a className="investor-brief" href="/investor-brief.pdf" download>
               Download Investor Brief
-            </button>
+            </a>
         </div>
       </Container>
     </section>

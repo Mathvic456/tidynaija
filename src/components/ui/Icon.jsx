@@ -14,8 +14,8 @@ export const TikTok = () => (
 );
 
 export const Check = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 13l5 5L19 7" />
   </svg>
 );
 
@@ -148,4 +148,28 @@ export const LinkedIn = () => (
   <svg viewBox="0 0 24 24" fill="currentColor">
     <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.3 18.5H5.7v-8h2.6v8zM7 9.4a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11.5 9.1h-2.6v-4.3c0-1-.4-1.7-1.4-1.7-.7 0-1.2.5-1.4 1-.1.2-.1.4-.1.7v4.3h-2.6s0-7 0-8h2.6v1.1c.3-.5 1-1.3 2.4-1.3 1.7 0 3.1 1.1 3.1 3.6v4.6z"/>
   </svg>
+);
+
+export const House = () => (
+  <img src="/house.png" alt="House" className="icon-img" />
+);
+
+export const BarChart = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="18" y1="20" x2="18" y2="10"/>
+    <line x1="12" y1="20" x2="12" y2="4"/>
+    <line x1="6" y1="20" x2="6" y2="14"/>
+  </svg>
+);
+
+export const Recycle = () => (
+  <img src="/recycle.png" alt="Recycle" className="icon-img" />
+);
+
+export const Briefcase = () => (
+  <img src="/briefcase.png" alt="Briefcase" className="icon-img" />
+);
+
+export const Expand = () => (
+  <img src="/expand.png" alt="Expand" className="icon-img" />
 );
