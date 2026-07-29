@@ -4,7 +4,7 @@ import Card from '../ui/Card';
 import Button from '../ui/Button';
 import { Check, Truck, Cleaning } from '../ui/Icon';
 
-const OfferSection = ({ id }) => {
+const OfferSection = ({ id, onServiceClick }) => {
   const offers = [
     {
       icon: <Truck />,
@@ -55,7 +55,13 @@ const OfferSection = ({ id }) => {
                   </li>
                 ))}
               </ul>
-              <Button variant="solid" href="#book">Book a Pickup</Button>
+              <Button
+                variant="solid"
+                type="button"
+                onClick={() => onServiceClick && onServiceClick('Book Online')}
+              >
+                Book a Pickup
+              </Button>
             </Card>
           ))}
         </div>

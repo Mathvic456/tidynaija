@@ -49,7 +49,7 @@ function App() {
 
       <MarketOpportunity id="investors" onDownloadClick={openInvestorModal} />
 
-      <OfferSection id="services" />
+      <OfferSection id="services" onServiceClick={openServiceModal} />
 
       <ProcessSection id="process" />
 
