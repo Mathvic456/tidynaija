@@ -1,7 +1,7 @@
 import React from 'react';
 import { Twitter, Instagram, TikTok } from '../ui/Icon';
 
-const Footer = ({ onMissionClick, onServiceClick }) => {
+const Footer = ({ onMissionClick, onServiceClick, onCareersClick }) => {
   return (
     <footer>
       <div className="footer-grid">
@@ -38,7 +38,7 @@ const Footer = ({ onMissionClick, onServiceClick }) => {
           'About Tidy Naija',
           'Our Mission',
           'Careers'
-        ]} onMissionClick={onMissionClick} />
+        ]} onMissionClick={onMissionClick} onCareersClick={onCareersClick} />
 
         <FooterColumn title="Support" items={[
           'Contact Us',
@@ -56,7 +56,7 @@ const Footer = ({ onMissionClick, onServiceClick }) => {
   );
 };
 
-const FooterColumn = ({ title, items, onMissionClick, onServiceClick }) => (
+const FooterColumn = ({ title, items, onMissionClick, onServiceClick, onCareersClick }) => (
   <div className="footer-col">
     <h5>{title}</h5>
     <ul>
@@ -64,6 +64,8 @@ const FooterColumn = ({ title, items, onMissionClick, onServiceClick }) => (
         <li key={index}>
           {title === 'Company' && item === 'Our Mission' && onMissionClick ? (
             <button type="button" className="footer-link-button" onClick={onMissionClick}>{item}</button>
+          ) : title === 'Company' && item === 'Careers' && onCareersClick ? (
+            <button type="button" className="footer-link-button" onClick={onCareersClick}>{item}</button>
           ) : title === 'Services' && (item === 'Book Online' || item === 'Become a Collector') && onServiceClick ? (
             <button type="button" className="footer-link-button" onClick={() => onServiceClick(item)}>{item}</button>
           ) : (

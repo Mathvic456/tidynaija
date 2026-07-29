@@ -14,6 +14,7 @@ import ComingSoonSection from './components/sections/ComingSoonSection';
 import MissionModal from './components/sections/MissionModal';
 import ServiceModal from './components/sections/ServiceModal';
 import InvestorBriefModal from './components/sections/InvestorBriefModal';
+import ComingSoonModal from './components/sections/ComingSoonModal';
 import Container from './components/shared/Container';
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
   const closeServiceModal = () => setServiceModal({ open: false, service: null });
   const openInvestorModal = () => setIsInvestorModalOpen(true);
   const closeInvestorModal = () => setIsInvestorModalOpen(false);
+  const [isComingOpen, setIsComingOpen] = useState(false);
+
+  const openComingModal = () => setIsComingOpen(true);
+  const closeComingModal = () => setIsComingOpen(false);
 
   return (
     <>
@@ -64,6 +69,7 @@ function App() {
         <ServiceModal serviceName={serviceModal.service} onClose={closeServiceModal} />
       )}
       {isInvestorModalOpen && <InvestorBriefModal onClose={closeInvestorModal} />}
+      {isComingOpen && <ComingSoonModal onClose={closeComingModal} />}
 
       <div className="dark-section">
         <Container>
@@ -74,7 +80,7 @@ function App() {
               <span className="accent">Nigeria?</span>
             </h2>
           </div>
-          <Footer onMissionClick={openMissionModal} onServiceClick={openServiceModal} />
+          <Footer onMissionClick={openMissionModal} onServiceClick={openServiceModal} onCareersClick={openComingModal} />
         </Container>
       </div>
     </>
