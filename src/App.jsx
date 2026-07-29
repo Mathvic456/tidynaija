@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <Container>
-        <Header />
+        <Header onServiceClick={openServiceModal} />
       </Container>
 
       <Container>

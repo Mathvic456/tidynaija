@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../ui/Button';
 
-const Header = () => {
+const Header = ({ onServiceClick }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -25,7 +25,11 @@ const Header = () => {
         <Button variant="outline" href="#investors">
           Investor Deck
         </Button>
-        <Button variant="solid" href="#book">
+        <Button
+          variant="solid"
+          type="button"
+          onClick={() => onServiceClick && onServiceClick('Book Online')}
+        >
           Book a Pickup
         </Button>
       </div>
@@ -54,7 +58,14 @@ const Header = () => {
           <Button variant="outline" href="#investors" onClick={closeMenu}>
             Investor Deck
           </Button>
-          <Button variant="solid" href="#book" onClick={closeMenu}>
+          <Button
+            variant="solid"
+            type="button"
+            onClick={() => {
+              closeMenu();
+              onServiceClick && onServiceClick('Book Online');
+            }}
+          >
             Book a Pickup
           </Button>
         </div>
