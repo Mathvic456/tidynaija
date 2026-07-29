@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Container from '../shared/Container';
 import Button from '../ui/Button';
 import { Check } from '../ui/Icon';
 import SuccessModal from './SuccessModal';

@@ -340,7 +340,7 @@ p.section-sub.light {
 
 .quote-block {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .quote-block p {
@@ -352,6 +352,7 @@ p.section-sub.light {
   color: var(--green);
   max-width: 640px;
   margin: 0 auto;
+  text-wrap: nowrap;
 }
 
 @media (max-width: 580px) {
