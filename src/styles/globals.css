@@ -340,14 +340,14 @@ p.section-sub.light {
 
 .quote-block {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .quote-block p {
   font-family: 'Instrument Serif', serif;
   font-weight: 400;
   /* font-style: italic; */
-  font-size: 54px;
+  font-size: 38px;
   line-height: 1.45;
   color: var(--green);
   max-width: 640px;
